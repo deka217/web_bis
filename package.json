@@ -1,0 +1,28 @@
+{
+  "name": "web-bis-ui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "homepage": "https://deka217.github.io/web_bis/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "cp dist/index.html dist/404.html",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r git@github.com:deka217/web_bis.git"
+  },
+  "dependencies": {
+    "lucide-react": "^1.21.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "@vitejs/plugin-react": "^4.3.2",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.1.11",
+    "vite": "^5.4.10"
+  }
+}

@@ -1,0 +1,170 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Component 14</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#F5F5F5;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+
+    .component-14{
+
+      width:320px;
+
+      background:#FFFFFF;
+
+      border-radius:20px;
+
+      padding:24px;
+
+      box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+
+      display:flex;
+
+      flex-direction:column;
+
+      gap:16px;
+    }
+
+    .component-header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .title{
+      font-size:20px;
+      font-weight:700;
+      color:#111827;
+    }
+
+    .badge{
+
+      padding:6px 12px;
+
+      border-radius:999px;
+
+      background:#EEF2FF;
+
+      color:#4338CA;
+
+      font-size:12px;
+
+      font-weight:600;
+    }
+
+    .image{
+
+      width:100%;
+
+      height:180px;
+
+      border-radius:16px;
+
+      background:#E5E7EB;
+
+      overflow:hidden;
+    }
+
+    .image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .description{
+      color:#6B7280;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .button{
+
+      height:48px;
+
+      border:none;
+
+      border-radius:12px;
+
+      background:#111827;
+
+      color:#FFFFFF;
+
+      font-size:16px;
+
+      font-weight:600;
+
+      cursor:pointer;
+
+      transition:0.2s;
+    }
+
+    .button:hover{
+      opacity:0.9;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="component-14">
+
+    <div class="component-header">
+
+      <h2 class="title">
+        Component 14
+      </h2>
+
+      <div class="badge">
+        Active
+      </div>
+
+    </div>
+
+    <div class="image">
+
+      <img
+        src="https://picsum.photos/400/300"
+        alt="Preview"
+      />
+
+    </div>
+
+    <p class="description">
+
+      Modern reusable component
+      converted from Figma design.
+
+    </p>
+
+    <button class="button">
+      Continue
+    </button>
+
+  </div>
+
+</body>
+</html>
+```
