@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { API_BASE_URL } from "../api";
 import MenuButton from "./MenuButton";
+import { Link } from "react-router-dom";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -245,38 +246,45 @@ sm:h-[210px]
           </div>
         )}
       </div>
-      <MenuButton
-        variant="accent"
-        className="
-    !flex
-
-    !w-full
-    lg:!max-w-[1272px]
-
-    !h-[60px]
-
-    !items-center
-    !justify-center
-
-    !gap-[8px]
-
-    !rounded-[20px]
-
-    !border
-    !border-[#FFA600]
-
-    !bg-white
-
-    !px-[50px]
-    !py-[16px]
-
-    !text-[#FFA600]
-
-    !mx-auto
+      <Link
+  to="/products"
+  className="
+    block
+    w-full
+    lg:max-w-[1272px]
+    mx-auto
+    no-underline
   "
-      >
-        View All Products
-      </MenuButton>
+>
+  <MenuButton
+    variant="accent"
+    className="
+      !flex
+
+      !w-full
+      !h-[60px]
+
+      !items-center
+      !justify-center
+
+      !gap-[8px]
+
+      !rounded-[20px]
+
+      !border
+      !border-[#FFA600]
+
+      !bg-white
+
+      !px-[50px]
+      !py-[16px]
+
+      !text-[#FFA600]
+    "
+  >
+    View All Products
+  </MenuButton>
+</Link>
     </section>
   );
 }
